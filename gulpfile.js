@@ -10,7 +10,7 @@ const clean = require('./gulp/clean')
 const serve = require('./gulp/serve')
 const lighthouse = require('./gulp/lighthouse')
  
-// //const pug2html = require('./gulp/tasks/pug2html')
+// const pug2html = require('./gulp/tasks/pug2html')
 // const copyDependencies = require('./gulp/copyDependencies')
  
 
