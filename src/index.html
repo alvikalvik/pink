@@ -10,14 +10,18 @@
     <header class="header">
         <div class="hamburger-block hamburger-block--nojs">
             <a class="mobile-logo">
-                <img class="mobile-logo__img" src="img/logotype-white-mobile.svg" alt="pink mobile logo">
+                <picture>
+                    <source media="(min-width:1366px)" srcset="img/logotype-white-desktop.svg">
+                    <source media="(min-width:768px)" srcset="img/logotype-white-tablet.svg">
+                    <img class="mobile-logo__img" src="img/logotype-white-mobile.svg" alt="pink mobile logo">
+                </picture>                
             </a>
             <div class="hamburger-block__hamburger"></div>
         </div>
         <nav class="nav">
             <ul class="menu menu--nojs">
                 <li class="menu__item">
-                    <a class="menu__link">Главная</a>                    
+                    <a class="menu__link menu__link--active">Главная</a>                    
                 </li>
                 <li class="menu__item">
                     <a href="photo.html" class="menu__link">Фотографии</a>

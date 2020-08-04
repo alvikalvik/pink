@@ -4,5 +4,16 @@
     &__img {
         width: 75px;
         height: 22px;
+    }    
+}
+
+@include media-tablet {
+    .mobile-logo {        
+        padding: 27px 40px 42px;
+        cursor: pointer;
+        &__img {
+            width: 147px;
+            height: 40px;
+        }    
     }
 }

@@ -1,5 +1,3 @@
-'use strict';
-
 // import modules
 import testModule from './testmodule';
 
