@@ -2,6 +2,8 @@
 
 @import "mixins/media";
 
+@import "mixins/mixins";
+
 @import "utils/variables";
 
 @import "utils/fonts";
@@ -9,6 +11,12 @@
 @import "common/global";
 
 @import "common/header";
+
+@import "common/hamburger-block";
+
+@import "common/mobile-logo";
+
+@import "common/menu";
 
 @import "common/footer";
 
