@@ -8,60 +8,92 @@
 </head>
 <body>
     <header class="header">
-        <div class="hamburger-block hamburger-block--nojs">
-            <a class="mobile-logo">
-                <picture>
-                    <source media="(min-width:1366px)" srcset="img/logotype-white-desktop.svg">
-                    <source media="(min-width:768px)" srcset="img/logotype-white-tablet.svg">
-                    <img class="mobile-logo__img" src="img/logotype-white-mobile.svg" alt="pink mobile logo">
-                </picture>                
-            </a>
-            <div class="hamburger-block__hamburger"></div>
-        </div>
-        <nav class="nav">
-            <ul class="menu menu--nojs">
-                <li class="menu__item">
-                    <a class="menu__link menu__link--active">Главная</a>                    
-                </li>
-                <li class="menu__item">
-                    <a href="photo.html" class="menu__link">Фотографии</a>
-                </li>
-                <li class="menu__item">
-                    <a href="form.html" class="menu__link">Конкурс</a>
-                </li>
-                <li class="menu__item">
-                    <a href="#" class="menu__link">HTML Academy</a>
-                </li>
-            </ul>
-        </nav>
+        <div class="container">
+            <div class="hamburger-block">            <!-- hamburger-block--nojs -->
+                <a class="logo">
+                    <picture>
+                        <source media="(min-width:1200px)" srcset="img/logotype-white-desktop.svg">
+                        <source media="(min-width:660px)" srcset="img/logotype-white-tablet.svg">
+                        <img class="logo__img" src="img/logotype-white-mobile.svg" alt="pink mobile logo">
+                    </picture>                
+                </a>
+                <div class="hamburger-block__hamburger"></div>
+            </div>
+            <nav class="nav">
+                <ul class="menu"> <!-- menu--nojs -->
+                    <li class="menu__item">
+                        <a class="menu__link menu__link--active">Главная</a>                    
+                    </li>
+                    <li class="menu__item">
+                        <a href="photo.html" class="menu__link">Фотографии</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="form.html" class="menu__link">Конкурс</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">HTML Academy</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>        
     </header>
 
     <section class="intro">
-        <div class="intro__img"></div>
-        <div class="intro__content">
-            <a href="#" class="intro__download-link">Скачать приложение</a>
-            <ul class="intro__apps-list">
-                <li class="intro__apps-list-item">
-                    <a href="#" class="intro__app-link">
-                        <img src="img/apple-logo.svg" alt="download apple app" class="intro__app-icon">
-                    </a>
-                </li>
-                <li class="intro__apps-list-item">
-                    <a href="#" class="intro__app-link">
-                        <img src="img/android-logo.svg" alt="download android app" class="intro__app-icon">
-                    </a>
-                </li>
-                <li class="intro__apps-list-item">
-                    <a href="#" class="intro__app-link">
-                        <img src="img/microsoft-logo.svg" alt="download microsoft app" class="intro__app-icon">
-                    </a>
-                </li>
-            </ul>
-            <div class="intro__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</div>
-        </div>
+        <div class="container">
+            <h1 class="page-header">Pink</h1>
+            <div class="intro__img"></div>
+            <div class="intro__content">
+                <div class="intro__slogan">Взгляните<br>на жизнь<br>иначе!</div>
+                <a href="#" class="intro__download-link">Скачать приложение</a>
+                <ul class="intro__apps-list">
+                    <li class="intro__apps-list-item">
+                        <a href="#" class="intro__app-link">
+                            <img src="img/apple-logo.svg" width="47" height="56" alt="download apple app" class="intro__app-icon">
+                        </a>
+                    </li>
+                    <li class="intro__apps-list-item">
+                        <a href="#" class="intro__app-link">
+                            <img src="img/android-logo.svg" width="43" height="57"  alt="download android app" class="intro__app-icon">
+                        </a>
+                    </li>
+                    <li class="intro__apps-list-item">
+                        <a href="#" class="intro__app-link">
+                            <img src="img/microsoft-logo.svg" width="44" height="51"  alt="download microsoft app" class="intro__app-icon">
+                        </a>
+                    </li>
+                </ul>
+                <div class="intro__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</div>
+            </div>            
+        </div>        
     </section>
 
-    <footer class="footer"></footer>
+    <section class="about">
+        <div class="about__question">
+            Устали от серости мегаполиса?
+        </div>
+        <div class="about__offer">
+            Нам есть, что вам предложить!
+        </div>
+        <div class="about__feature">
+            <h3 class="about__feature-header">Поднимает настроение</h3>
+            <p class="about__feature-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+        </div>
+        <div class="about__feature">
+            <h3 class="about__feature-header">Меняет мир вокруг</h3>
+            <p class="about__feature-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        </div>
+        <div class="about__feature">
+            <h3 class="about__feature-header">Заводит новых друзей</h3>
+            <p class="about__feature-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+        </div>
+        <picture>
+            <source media="(min-width:1200px)" srcset="img/iphone-screen-desktop.jpg 1x, img/iphone-screen-desktop@2x.jpg 1.5x">
+            <source media="(min-width:660px)" srcset="img/iphone-screen-tablet.jpg 1x, img/iphone-screen-tablet@2x.jpg 1.5x">
+            <img class="about__img" width="157" height="320" src="img/iphone-screen.jpg" srcset="img/iphone-screen.jpg 1x, img/iphone-screen@2x.jpg 1.5x" alt="Pink features">
+        </picture>        
+    </section>
+
+    <footer class="footer">Footer contet</footer>
 
     
 </body>

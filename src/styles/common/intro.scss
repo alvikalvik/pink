@@ -1,0 +1,154 @@
+.intro {     
+    position: relative;
+    width: 100%;
+    background-color: #2a3a4a;
+    margin-top: -66px;
+    z-index: 2;
+}
+
+.intro__img {
+    padding-top: 66px; 
+    min-height: 463px;
+    background-image: url(../img/top-bg-mobile.jpg);
+    background-position: 0 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url(../img/top-bg-mobile@2x.jpg);
+    }
+}
+
+.intro__content {
+    background-color: #1d2631;
+    padding: 28px 20px 35px 20px;
+}
+
+.intro__slogan {
+    display: none;
+}
+
+.intro__download-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 281px;
+    height: 55px;
+    border: 3px solid #ffffff;
+    border-radius: 55px;
+    color: #ffffff;   
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    text-decoration: none;
+    &:hover {
+        background-color: #fff;
+        color: #d22856;
+    }
+    &:active {
+        background-color: #fff;
+        color: rgba($color: #d22856, $alpha: 0.3);
+    }
+}
+
+.intro__apps-list {
+    @include reset-list;
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.intro__text {    
+    color: #ffffff;    
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: center;
+    margin-top: 28px;
+}
+
+@include media-tablet {
+    .intro {            
+        margin-top: -109px;
+       
+    }
+    
+    .intro__img {
+        padding-top: 109px; 
+        min-height: 729px;
+        background-image: url(../img/top-bg-tablet.jpg);       
+        @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+            background-image: url(../img/top-bg-tablet@2x.jpg);
+        }
+    } 
+    
+    .intro__content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 340px;
+        background-color: transparent;
+        padding: 213px 20px 112px 20px;
+    }
+    .intro__slogan {
+        display: block;
+        margin: 0 auto;
+        color: #ffffff;        
+        font-size: 40px;
+        font-weight: 300;
+        text-align: center;
+        margin-bottom: 39px;
+    }
+
+    .intro__apps-list {        
+        margin-top: 65px;        
+    }
+
+    .intro__text {            
+        margin-top: 60px;
+    }
+}
+
+@include media-laptop {
+    .intro {            
+        margin-top: -110px;
+       
+    }
+    
+    .intro__img {
+        padding-top: 110px; 
+        min-height: 853px;
+        background-image: url(../img/top-bg-desktop.jpg);       
+        @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+            background-image: url(../img/top-bg-desktop@2x.jpg);
+        }
+    } 
+    
+    .intro__content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 560px;
+        background-color: transparent;
+        padding: 231px 130px 125px 130px;
+    }
+    .intro__slogan {
+        display: block;
+        margin: 0 auto;
+        color: #ffffff;        
+        font-size: 50px;
+        font-weight: 300;
+        text-align: center;
+        margin-bottom: 65px;
+    }
+
+    .intro__apps-list {        
+        margin-top: 65px;        
+    }
+
+    .intro__text {            
+        margin-top: 60px;
+    }
+}
+

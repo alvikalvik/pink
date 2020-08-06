@@ -1,9 +1,10 @@
 .menu {
     @include reset-list;
-    display: none;
-    &--nojs, &--active {
-        display: block;
-    }
+    display: none;    
+}
+
+.header--nojs .menu, .header--active .menu {
+    display: block;
 }
 
 .menu__item {

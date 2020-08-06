@@ -1,4 +1,4 @@
-.mobile-logo {        
+.logo {        
     padding: 22px 20px 25px;
     cursor: pointer;
     &__img {
@@ -8,7 +8,7 @@
 }
 
 @include media-tablet {
-    .mobile-logo {        
+    .logo {        
         padding: 27px 40px 42px;
         cursor: pointer;
         &__img {
