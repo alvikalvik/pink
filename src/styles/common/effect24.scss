@@ -1,0 +1,73 @@
+.effect24 {
+    display: none;
+}
+
+@include media-tablet {
+    .effect24 {
+        display: block;
+        padding: 58px 35px 0 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .effect24__img {
+        margin-right: 70px;
+    }
+
+    .effect24_header {
+        color: #000000;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 36px;
+    }
+
+    .effect24__text {
+        margin-top: 25px;
+        color: #283645;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .effect24__link {
+        margin-top: 25px;
+        color: #d22856;
+        font-size: 14px;
+        font-weight: 400;        
+    }
+}
+
+@include media-laptop {
+    .effect24 {        
+        padding: 73px 180px 0 130px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .effect24__img {
+        width: 298px;
+        height: 345px;
+    }
+
+    .effect24_header {
+        color: #000000;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 36px;
+    }
+
+    .effect24__text {
+        margin-top: 40px;
+        color: #283645;
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .effect24__link {
+        margin-top: 50px;
+        color: #d22856;
+        font-size: 18px;
+        font-weight: 400;        
+    }
+}
