@@ -1,0 +1,317 @@
+.prices {
+    padding: 0;
+}
+
+.prices__table-wrapper {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 65px;
+    width: 280px;
+    height: 279px;
+    overflow: visible;    
+}
+
+.prices__table {
+    position: absolute;
+    left: -560px;
+    border-collapse: collapse;
+    width: 1120px;    
+}
+
+.prices__table-header {    
+    width: 276px;
+    height: 94px;
+    border-right: 2px solid #e5e5e5;
+    background-color: #283645;
+    &:last-child, &:first-child {
+        border-right: none;
+    }
+}
+
+.prices__table-header--empty {
+    background-color: transparent;
+}
+
+.prices__tariff-name {
+    color: #ffffff;    
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.prices__tariff-price {
+    display: block;
+    color: #c3c7cb;    
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 30px;
+    text-transform: uppercase;
+    width: 276px;
+    margin: 0;
+}
+
+.prices__table-header--hit {
+    position: relative;
+    overflow: hidden;
+    &::before {
+        content: "Хит";
+        position: absolute;
+        top: 5px;
+        left: -25px;
+        transform: rotate(-45deg);
+        color: #ffffff;        
+        font-size: 12px;
+        line-height: 30px;
+        font-weight: 700;        
+        text-transform: uppercase;
+        text-align: center;
+        background-color: #d22856;
+        width: 90px;
+        height: 30px;
+    }
+}
+
+.prices__option {
+    width: 276px;
+    height: 59px;
+    border: 2px solid #e5e5e5;
+}
+
+.prices__option-name {
+    display: block;
+    width: 276px;
+    color: #283645;    
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 59px;
+    padding-left: 15px;
+}
+
+.prices__option--yes, .prices__option--no {
+    position: relative;
+    &::before {        
+        position: absolute;
+        left: 22px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #283645;        
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 30px;
+        text-transform: uppercase;
+    }
+    &::after {
+        content: "";        
+        position: absolute;        
+        top: 50%;
+        right: 17px;
+        transform: translateY(-50%);
+    }
+}
+
+.prices__option--yes {
+    &::after {        
+        width: 31px;
+        height: 21px;       
+        background-image: url(../img/yes.svg);
+        background-size: 31px 21px;
+        background-repeat: no-repeat;
+        background-position: 0 0;   
+    }
+}
+
+.prices__option--no {
+    &::after {        
+        width: 27px;
+        height: 26px;       
+        background-image: url(../img/no.svg);
+        background-size: 27px 26px;
+        background-repeat: no-repeat;
+        background-position: 0 0;   
+    }
+}
+
+.prices__option--rose {
+    &::before {
+        content: "Розовый фильтр";        
+    }
+}
+
+.prices__option--smile {
+    &::before {
+        content: "Смайлики";        
+    }
+}
+
+.prices__option--comments {
+    &::before {
+        content: "Комментарии";        
+    }
+}
+
+.prices__pin-list {
+    @include reset-list;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.prices__pin {
+    position: relative;    
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    background-color: transparent;   
+    margin: 6px;
+    cursor: pointer;
+    &::before {
+        position: absolute;
+        content: "";
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 6px;
+        height: 6px;
+        border-radius: 100%;
+        background-color: rgba($color: #283645, $alpha: 0.3);
+    }
+}
+
+.prices__pin--active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    background-color: #283645;   
+    margin: 6px;
+    cursor: pointer;
+    &::before {
+        content: "";
+        width: 6px;
+        height: 6px;
+        border-radius: 100%;
+        background-color: #ffffff;
+    }
+}
+
+@include media-tablet {
+    .prices__table-wrapper {
+        margin-top: 35px;
+        margin-bottom: 60px;
+        width: 620px;
+        height: auto;        
+    }
+    
+    .prices__table {
+        position: static;
+        left: 0;        
+        width: 620px;    
+    }
+
+    .prices__table-header {    
+        width: 152px;
+        height: 75px;        
+    }
+
+    .prices__tariff-name {           
+        font-size: 16px;        
+        margin: 0;        
+    }
+    
+    .prices__tariff-price {         
+        font-size: 18px;        
+        width: 152px;        
+    }
+
+    .prices__table-header--hit {        
+        &::before {    
+            top: 5px;
+            left: -20px;                            
+            font-size: 12px;
+            line-height: 25px;            
+            width: 70px;
+            height: 25px;
+        }
+    }
+
+    .prices__option {
+        width: 152px;
+        height: 45px;        
+    }
+
+    .prices__option-name {        
+        width: 152px; 
+        line-height: 45px;        
+    }
+    
+    .prices__option--yes, .prices__option--no {        
+        &::before {        
+            display: none;
+        }
+        &::after {                    
+                    
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    .prices__pin-list {
+        display: none;
+    }
+}
+
+@include media-laptop {
+    .prices__table-wrapper {
+        width: 940px;        
+        margin-top: 70px; 
+        margin-bottom: 90px;              
+    }
+    
+    .prices__table {            
+        width: 940px;    
+    }
+
+    .prices__table-header {    
+        width: 233px;
+        height: 98px;        
+    }
+
+    .prices__tariff-name {           
+        font-size: 18px;                
+    }
+    
+    .prices__tariff-price {         
+        font-size: 24px;        
+        width: 233px;        
+    }
+
+    .prices__table-header--hit {        
+        &::before {    
+            top: 5px;
+            left: -25px;                            
+            font-size: 14px;
+            line-height: 30px;            
+            width: 90px;
+            height: 30px;
+        }
+    }
+
+    .prices__option {
+        width: 233px;
+        height: 59px;        
+    }
+
+    .prices__option-name {        
+        width: 233px; 
+        line-height: 59px;        
+    }
+}
