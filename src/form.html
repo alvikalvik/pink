@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pink Form</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="hamburger-block hamburger-block--nojs">
+                <a href="/" class="logo">
+                    <picture>
+                        <source media="(min-width:1200px)" srcset="img/logotype-white-desktop.svg">
+                        <source media="(min-width:660px)" srcset="img/logotype-white-tablet.svg">
+                        <img class="logo__img" src="img/logotype-white-mobile.svg" alt="pink mobile logo">
+                    </picture>                
+                </a>
+                <div class="hamburger-block__hamburger"></div>
+            </div>
+            <nav class="nav">
+                <ul class="menu menu--nojs">
+                    <li class="menu__item">
+                        <a href="/" class="menu__link">Главная</a>                    
+                    </li>
+                    <li class="menu__item">
+                        <a href="photo.html" class="menu__link">Фотографии</a>
+                    </li>
+                    <li class="menu__item menu__link--active">
+                        <a href="form.html" class="menu__link">Конкурс</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">HTML Academy</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>        
+    </header>
+
+    <section class="intro intro--secondary-page">
+        <div class="container">
+            <h1 class="page-header">Pink Form Page</h1>
+            <div class="intro__img"></div>
+            <div class="intro__content">
+                <div class="intro__slogan">Конкурс на самое<br>безбашенное<br>путешествие с Пинк</div>                
+            </div>            
+        </div>        
+    </section> 
+    
+    <section class="form-info">
+        <p class="form-info__text">
+            Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="form-info__additional-text">Пожалуйста, заполните форму ниже:</span>
+        </p>
+    </section>
+
+    <section class="main-form">
+        <form action="#" class="main-form__form">
+            <div class="main-form__name-info">
+                <div class="main-form__name-info-group">
+                    <label for="second-name" class="main-form__name-label">Фамилия:</label>                
+                    <input id="second-name" type="text" class="main-form__name-input" placeholder="Укажите фамилию *" required> 
+                </div>                               
+                <div class="main-form__name-info-group">
+                    <label for="first-name" class="main-form__name-label">Имя:</label>
+                    <input id="first-name" type="text" class="main-form__name-input" placeholder="Введите ваше имя *" required>
+                </div>
+                <div class="main-form__name-info-group">
+                    <label for="patronymic" class="main-form__name-label">Отчество:</label>
+                    <input id="patronymic" type="text" class="main-form__name-input" placeholder="Ну и отчество тоже">
+                </div>                 
+            </div>
+
+            <fieldset class="main-form__achievements">
+                <legend class="main-form__achievements-legend">Ваши безбашенные достижения в путешествии</legend>
+                <div class="main-form__achievements-group">
+                    <input type="checkbox" id="chek-shark" name="chek-shark" class="main-form__achievements_checkbox" checked>
+                    <label for="chek-shark" class="main-form__achievements-label">Сделал селфи с акулой</label>
+                </div>
+                <div class="main-form__achievements-group">
+                    <input type="checkbox" id="chek-sun-burn" name="chek-sun-burn" class="main-form__achievements_checkbox" checked>
+                    <label for="chek-sun-burn" class="main-form__achievements-label">Обгорел на пляже</label>
+                </div>
+                <div class="main-form__achievements-group">
+                    <input type="checkbox" id="chek-chuck" name="chek-chuck" class="main-form__achievements_checkbox">
+                    <label for="chek-chuck" class="main-form__achievements-label">Видел Чака Норриса</label>
+                </div>
+                <div class="main-form__achievements-group">
+                    <input type="checkbox" id="chek-souvenirs" name="chek-souvenirs" class="main-form__achievements_checkbox">
+                    <label for="chek-souvenirs" class="main-form__achievements-label">Накупил сувениров</label>
+                </div>
+                <div class="main-form__achievements-group">
+                    <input type="checkbox" id="chek-tower" name="chek-tower" class="main-form__achievements_checkbox" checked>
+                    <label for="chek-tower" class="main-form__achievements-label">Удержал башню</label>
+                </div>
+                <div class="main-form__achievements-group">
+                    <input type="checkbox" id="chek-hotel" name="chek-hotel" class="main-form__achievements_checkbox">
+                    <label for="chek-hotel" class="main-form__achievements-label">Разгромил отель</label>
+                </div>
+            </fieldset>
+
+            <fieldset class="main-form__contact-info">
+                <legend class="main-form__contact-info-legend">Контактная информация</legend>                
+                <div class="main-form__contact-info-group">                    
+                    <input id="phone-number" type="tel" class="main-form__tel" placeholder="Номер, пожалуйста">
+                    <label for="phone-number" class="main-form__contact-label">Номер телефона</label>
+                </div>
+                <div class="main-form__contact-info-group">                    
+                    <input id="email" type="email" class="main-form__email" placeholder="Введите почту *" required>
+                    <label for="email" class="main-form__contact-label">Адрес почты</label>
+                </div>
+            </fieldset>
+
+            <fieldset class="main-form__app-radio">
+                <legend class="main-form__app-radio-legend">С каким приложением путешествовали?</legend>
+                <div class="main-form__app-radio-group">
+                    <input class="main-form__app-radio-buton" type="radio" id="radio-ios" name="app-radio" value="ios" checked>
+                    <label class="main-form__app-label" for="radio-ios">Pink для iOS</label>
+                </div>
+                <div class="main-form__app-radio-group">
+                    <input class="main-form__app-radio-buton" type="radio" id="radio-android" name="app-radio" value="android">
+                    <label class="main-form__app-label" for="radio-android">Pink на Android</label>
+                </div>
+                <div class="main-form__app-radio-group">
+                    <input class="main-form__app-radio-buton" type="radio" id="radio-windows" name="app-radio" value="windows">
+                    <label class="main-form__app-label" for="radio-windows">Windows Phone</label>
+                </div>
+            </fieldset>
+            
+            <fieldset class="main-form__emotions">
+                <legend class="main-form__emotions-legend">Опишите свои эмоции</legend>
+                <textarea name="emotions-text" id="emotions-text" cols="30" rows="10" class="main-form__emotions-text">Можно прям в красках, не стесняясь в выражениях</textarea>
+            </fieldset>
+
+            <button type="submit" class="main-form__btn">Отправить форму</button>
+
+            <div class="main-form__required-info">
+                <span class="main-form__required-info-star">*</span> — обязательные<span class="main-form__required-info-additional">для заполнения</span> поля
+            </div>   
+        </form>
+    </section>
+
+    <footer class="footer footer--secondary-page"> 
+            <a class="footer__logo">
+                <picture>
+                    <source media="(min-width:1200px)" srcset="img/logotype-black-desktop.svg">                    
+                    <img class="logo__img" src="img/logotype-black-tablet.svg" alt="pink mobile logo">
+                </picture>                
+            </a>
+            <ul class="footer__social-list">
+                <li class="footer__social-item">
+                    <a href="#" class="social__link">
+                        <svg width="30px" height="30px" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.41421" viewBox="0 0 560 400" xmlns="http://www.w3.org/2000/svg"><path d="m633.9 812.041c112.46 0 173.96-93.168 173.96-173.96 0-2.646-.054-5.28-.173-7.903 11.938-8.63 22.314-19.4 30.498-31.66-10.955 4.87-22.744 8.148-35.111 9.626 12.623-7.569 22.314-19.543 26.886-33.817-11.813 7.003-24.895 12.093-38.824 14.841-11.157-11.884-27.041-19.317-44.629-19.317-33.764 0-61.144 27.381-61.144 61.132 0 4.798.537 9.464 1.586 13.941-50.815-2.557-95.874-26.886-126.03-63.88-5.251 9.035-8.279 19.531-8.279 30.73 0 21.212 10.794 39.938 27.208 50.893-10.031-.31-19.454-3.064-27.69-7.647-.009.257-.009.507-.009.781 0 29.61 21.075 54.332 49.051 59.934-5.137 1.4-10.543 2.151-16.122 2.151-3.933 0-7.766-.387-11.491-1.102 7.784 24.293 30.355 41.971 57.115 42.465-20.926 16.402-47.287 26.171-75.937 26.171-4.929 0-9.798-.281-14.584-.847 27.059 17.344 59.189 27.464 93.722 27.464" fill="#d22856" fill-rule="nonzero" transform="matrix(.906028 0 0 .906028 -344.419 -426.017)"/></svg>
+                    </a>
+                </li>
+                <li class="footer__social-item">
+                    <a href="#" class="social__link">
+                        <svg fill="#d22856" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18px" height="18px">    <path d="M17.525,9H14V7c0-1.032,0.084-1.682,1.563-1.682h1.868v-3.18C16.522,2.044,15.608,1.998,14.693,2 C11.98,2,10,3.657,10,6.699V9H7v4l3-0.001V22h4v-9.003l3.066-0.001L17.525,9z"/></svg>
+                    </a>
+                </li>
+                <li class="footer__social-item">
+                    <a href="#" class="social__link">
+                        <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 1280 1280"><path d="M462 640c0 228.6.3 286.1 1.3 285.7.6-.2 93.9-54 207.2-119.4 113.3-65.4 224.3-129.5 246.7-142.4 31.5-18.1 40.4-23.7 39.5-24.6-.7-.6-31.1-18.4-67.7-39.6-36.6-21.1-146.9-84.8-245.2-141.5-98.3-56.8-179.4-103.5-180.3-103.8-1.3-.6-1.5 28.8-1.5 285.6z" fill="#d22856"/></svg>
+                    </a>
+                </li> 
+            </ul>
+
+            <div class="footer__designed-by">
+                <span class="footer__designed-by-text">Разработано</span>
+                <a href="#" class="footer__designed-by-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="34px" width="27px" viewBox="0 0 220 250" xml:space="preserve" id="svg2" version="1.1"><defs id="defs6"><clipPath id="clipPath22" clipPathUnits="userSpaceOnUse"><path id="path20" d="M0 195.325h154.384V0H0z"/></clipPath></defs><g transform="matrix(1.33333 0 0 -1.33333 0 260.433)" id="g10"><g transform="translate(143.852 124.97)" id="g12"><path id="path14" d="M0 0l-67.02 39.508v.01l-.008-.005-.008.005v-.01L-133.32.046v52.731l66.661 6.989L0 52.777zm-.054-6.992L-18.29-17.736l-8.419-4.96-40.149 23.884-.066-6.951 34.317-20.407-.304-.18-.739-.435-4.876-2.872-28.332 16.854-.066-6.951 22.362-13.298-5.276-3.529-.128-.077-16.892 9.951-.066-6.95 11.084-6.528-11.291-6.779-66.044 39.259 66.139 39.755v-.007zM0-73.051l-66.66-39.663-66.66 39.663v57.615l66.374-39.505.111-7.16-45.534 27.1-.067-6.951 45.715-27.475.113-7.349-45.7 27.185-.066-6.95 45.714-27.475L-20.508-56.4v6.982l-.057-.034v22.705L0-14.466zm-65.855 142.82l-.807.084-76.69-8.04V-78.755l76.692-45.633 76.692 45.633V61.813z" fill="#d22856" fill-opacity="1" fill-rule="nonzero" stroke="none"/></g><g id="g16"><g clip-path="url(#clipPath22)" id="g18"><g transform="translate(143.852 124.97)" id="g24"><path id="path26" d="M0 0l-67.02 39.508v.01l-.008-.005-.008.005v-.01L-133.32.046v52.731l66.661 6.989L0 52.777zm-.054-6.992L-18.29-17.736l-8.419-4.96-40.149 23.884-.066-6.951 34.317-20.407-.304-.18-.739-.435-4.876-2.872-28.332 16.854-.066-6.951 22.362-13.298-5.276-3.529-.128-.077-16.892 9.951-.066-6.95 11.084-6.528-11.291-6.779-66.044 39.259 66.139 39.755v-.007zM0-73.051l-66.66-39.663-66.66 39.663v57.615l66.374-39.505.111-7.16-45.534 27.1-.067-6.951 45.715-27.475.113-7.349-45.7 27.185-.066-6.95 45.714-27.475L-20.508-56.4v6.982l-.057-.034v22.705L0-14.466zm-65.855 142.82l-.807.084-76.69-8.04V-78.755l76.692-45.633 76.692 45.633V61.813z" fill="none" stroke="#231f20" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="none" stroke-opacity="1"/></g></g></g></g></svg>
+                </a>
+            </div>       
+    </footer>
+
+    
+</body>
+</html>
