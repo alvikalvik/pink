@@ -101,13 +101,13 @@
 
             <fieldset class="main-form__contact-info">
                 <legend class="main-form__contact-info-legend">Контактная информация</legend>                
-                <div class="main-form__contact-info-group">                    
-                    <input id="phone-number" type="tel" class="main-form__tel" placeholder="Номер, пожалуйста">
-                    <label for="phone-number" class="main-form__contact-label">Номер телефона</label>
+                <div class="main-form__contact-info-group"> 
+                    <label for="phone-number" class="main-form__contact-label">Номер телефона</label>                  
+                    <input id="phone-number" type="tel" class="main-form__contact-input" placeholder="Номер, пожалуйста">                    
                 </div>
                 <div class="main-form__contact-info-group">                    
-                    <input id="email" type="email" class="main-form__email" placeholder="Введите почту *" required>
                     <label for="email" class="main-form__contact-label">Адрес почты</label>
+                    <input id="email" type="email" class="main-form__contact-input" placeholder="Введите почту *" required>                    
                 </div>
             </fieldset>
 
@@ -115,15 +115,15 @@
                 <legend class="main-form__app-radio-legend">С каким приложением путешествовали?</legend>
                 <div class="main-form__app-radio-group">
                     <input class="main-form__app-radio-buton" type="radio" id="radio-ios" name="app-radio" value="ios" checked>
-                    <label class="main-form__app-label" for="radio-ios">Pink для iOS</label>
+                    <label class="main-form__app-radio-label" for="radio-ios">Pink для iOS</label>
                 </div>
                 <div class="main-form__app-radio-group">
                     <input class="main-form__app-radio-buton" type="radio" id="radio-android" name="app-radio" value="android">
-                    <label class="main-form__app-label" for="radio-android">Pink на Android</label>
+                    <label class="main-form__app-radio-label" for="radio-android">Pink на Android</label>
                 </div>
                 <div class="main-form__app-radio-group">
                     <input class="main-form__app-radio-buton" type="radio" id="radio-windows" name="app-radio" value="windows">
-                    <label class="main-form__app-label" for="radio-windows">Windows Phone</label>
+                    <label class="main-form__app-radio-label" for="radio-windows">Windows Phone</label>
                 </div>
             </fieldset>
             
@@ -132,11 +132,13 @@
                 <textarea name="emotions-text" id="emotions-text" cols="30" rows="10" class="main-form__emotions-text">Можно прям в красках, не стесняясь в выражениях</textarea>
             </fieldset>
 
-            <button type="submit" class="main-form__btn">Отправить форму</button>
-
-            <div class="main-form__required-info">
-                <span class="main-form__required-info-star">*</span> — обязательные<span class="main-form__required-info-additional">для заполнения</span> поля
-            </div>   
+            <div class="main-form__btn-required-wrapper">
+                <button type="submit" class="main-form__btn">Отправить форму</button>
+                <div class="main-form__required-info">
+                    <span class="main-form__required-info-star">*</span> — обязательные<span class="main-form__required-info-additional">для заполнения</span> поля
+                </div>
+            </div>
+               
         </form>
     </section>
 

@@ -59,6 +59,9 @@
 .main-form__achievements-group {
     min-height: 35px;
     margin-top: 45px;
+    &:first-of-type {
+        margin-top: 0;
+    }
 }
 
 .main-form__achievements_checkbox {
@@ -90,4 +93,189 @@
     background-position: center center;
     background-size: 22px 16px;
     background-repeat: no-repeat;
+}
+
+.main-form__contact-info {
+    padding: 40px 22px 44px 22px;
+    border: none;
+}
+
+.main-form__contact-info-legend {
+    display: none;
+}
+
+.main-form__contact-info-group {
+    margin-top: 25px;
+    &:first-of-type {
+        margin-top: 0;
+    }
+}
+
+.main-form__contact-label {
+    display: block;
+    color: #d22856;    
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.main-form__contact-input {
+    display: block;
+    width: 100%;
+    min-height: 59px;
+    border: 2px solid #e5e5e5;
+    color: #283645;    
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    padding: 10px 20px;
+    &:hover {
+        border: 2px solid #283645;
+    }
+    &:focus {
+        border: 2px solid #d22856;
+        outline: none;
+    }
+}
+
+.main-form__app-radio {
+    display: block;
+    padding: 60px 20px 40px 20px;
+    background-color: #f2f2f2;       
+    border: none;
+}
+
+.main-form__app-radio-legend {
+    position: relative;
+    top: 35px;  
+    color: #d22856;    
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: uppercase; 
+    text-align: center; 
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.main-form__app-radio-group {
+    min-height: 35px;
+    margin-top: 45px;
+    &:first-of-type {
+        margin-top: 0;
+    }
+}
+
+.main-form__app-radio-buton {
+    display: none;
+}
+
+.main-form__app-radio-label {
+    display: block;
+    position: relative;
+    padding-left: 50px;
+    color: #283645;    
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 35px;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 35px;
+        height: 35px;
+        border: 2px solid #e5e5e5;
+        border-radius: 100%;
+        background-color: #ffffff;
+    }
+}
+
+.main-form__app-radio-buton:checked + .main-form__app-radio-label::after {    
+    content: "";
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        transform: translateY(-50%);
+        width: 15px;
+        height: 15px;        
+        border-radius: 100%;
+        background-color: #d22856;
+}
+
+.main-form__emotions {
+    padding: 40px 22px 44px 22px;
+    border: none;
+}
+
+.main-form__emotions-legend {
+    position: relative;
+    top: 35px;  
+    color: #d22856;    
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: uppercase; 
+    text-align: center; 
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.main-form__emotions-text {
+    display: block;
+    margin-top: 10px;
+    padding: 20px;
+    width: 100%;
+    height: 197px;
+    border: 2px solid #e5e5e5;
+    color: #283645;    
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.main-form__btn {
+    display: block;
+    width: 276px;
+    height: 59px;
+    border: 2px solid #2aab6d;
+    background-color: #2aab6d;
+    margin: 0 auto;
+    margin-top: 25px;
+    color: #ffffff;    
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    &:hover, &:active {
+        border: 2px solid #d22856;
+        background-color: #1c9b5e;
+    }
+    &:active {
+        color: rgba($color: #ffffff, $alpha: 0.3)
+    }
+    &:disabled {
+        border: 2px solid #e5e5e5;
+        background-color: #e5e5e5;
+    }
+}
+
+.main-form__required-info {
+    color: #283645;    
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.main-form__required-info-star {
+    color: #d22856;
+}
+
+.main-form__required-info-additional {
+    display: none;
 }
