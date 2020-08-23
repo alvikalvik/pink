@@ -14,3 +14,23 @@
 .form-info__additional-text {
     display: none;
 }
+
+@include media-tablet {
+    .form-info {
+        padding: 100px 85px 10px 85px;
+    }
+
+    .form-info__text {   
+        font-size: 18px;        
+    }
+
+    .form-info__additional-text {
+         display: inline;
+    }
+}
+
+@include media-laptop {
+    .form-info {
+        padding: 100px 220px 10px 220px;
+    }
+}

@@ -113,6 +113,14 @@
             background-image: url(../img/top-bg-tablet@2x.jpg);
         }
     } 
+
+    .intro--secondary-page .intro__img {   
+        min-height: 440px;
+        background-image: url(../img/secondary-intro-bg-tablet.jpg);    
+        @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+            background-image: url(../img/secondary-intro-bg-tablet@2x.jpg);
+        }
+    }
     
     .intro__content {
         position: absolute;
@@ -122,6 +130,13 @@
         background-color: transparent;
         padding: 213px 20px 112px 20px;
     }
+
+    .intro--secondary-page .intro__content {
+        position: static;        
+        width: auto;       
+        padding: 0;
+    }
+
     .intro__slogan {
         display: block;
         margin: 0 auto;
@@ -130,6 +145,18 @@
         font-weight: 300;
         text-align: center;
         margin-bottom: 39px;
+    }
+
+    .intro--secondary-page .intro__slogan {            
+        position: absolute;
+        top: 200px;
+        left: 50%;
+        transform: translateX(-50%);
+        min-width: 600px;
+        color: #ffffff;    
+        font-size: 50px;
+        font-weight: 300;
+        text-align: center;
     }
 
     .intro__apps-list {        
@@ -154,7 +181,15 @@
         @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
             background-image: url(../img/top-bg-desktop@2x.jpg);
         }
-    } 
+    }
+    
+    .intro--secondary-page .intro__img {   
+        min-height: 395px;
+        background-image: url(../img/secondary-intro-bg-desktop.jpg);    
+        @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+            background-image: url(../img/secondary-intro-bg-desktop@2x.jpg);
+        }
+    }
     
     .intro__content {
         position: absolute;
@@ -172,6 +207,19 @@
         font-weight: 300;
         text-align: center;
         margin-bottom: 65px;
+    }
+
+    .intro--secondary-page .intro__slogan {            
+        position: absolute;
+        top: 185px;
+        left: 50%;
+        transform: translateX(-50%);
+        min-width: 1100px;
+        color: #ffffff;        
+    }
+
+    .intro--secondary-page .intro__slogan br:first-child {
+        display: none;
     }
 
     .intro__apps-list {        
