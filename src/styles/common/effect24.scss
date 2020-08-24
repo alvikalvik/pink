@@ -4,11 +4,14 @@
 
 @include media-tablet {
     .effect24 {
-        display: block;
-        padding: 58px 35px 0 25px;
+        display: block;        
+    }
+
+    .effect24 .container {        
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding: 58px 35px 0 25px;
     }
 
     .effect24__img {
@@ -38,11 +41,8 @@
 }
 
 @include media-laptop {
-    .effect24 {        
-        padding: 73px 180px 0 130px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    .effect24 .container {        
+        padding: 73px 180px 0 130px;        
     }
 
     .effect24__img {

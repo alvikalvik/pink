@@ -49,101 +49,112 @@
     </section> 
     
     <section class="form-info">
-        <p class="form-info__text">
-            Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="form-info__additional-text">Пожалуйста, заполните форму ниже:</span>
-        </p>
+        <div class="container">
+            <p class="form-info__text">
+                Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="form-info__additional-text">Пожалуйста, заполните форму ниже:</span>
+            </p>
+        </div>        
     </section>
 
     <section class="main-form">
-        <form action="#" class="main-form__form">
-            <div class="main-form__name-info">
-                <div class="main-form__name-info-group">
-                    <label for="second-name" class="main-form__name-label">Фамилия:</label>                
-                    <input id="second-name" type="text" class="main-form__name-input" placeholder="Укажите фамилию *" required> 
-                </div>                               
-                <div class="main-form__name-info-group">
-                    <label for="first-name" class="main-form__name-label">Имя:</label>
-                    <input id="first-name" type="text" class="main-form__name-input" placeholder="Введите ваше имя *" required>
+        <div class="container">
+            <form action="#" class="main-form__form">
+                <div class="main-form__name-info">
+                    <div class="main-form__name-info-group">
+                        <label for="second-name" class="main-form__name-label">Фамилия:</label>                
+                        <input id="second-name" type="text" class="main-form__name-input" placeholder="Укажите фамилию *" required> 
+                    </div>                               
+                    <div class="main-form__name-info-group">
+                        <label for="first-name" class="main-form__name-label">Имя:</label>
+                        <input id="first-name" type="text" class="main-form__name-input" placeholder="Введите ваше имя *" required>
+                    </div>
+                    <div class="main-form__name-info-group">
+                        <label for="patronymic" class="main-form__name-label">Отчество:</label>
+                        <input id="patronymic" type="text" class="main-form__name-input" placeholder="Ну и отчество тоже">
+                    </div>                 
                 </div>
-                <div class="main-form__name-info-group">
-                    <label for="patronymic" class="main-form__name-label">Отчество:</label>
-                    <input id="patronymic" type="text" class="main-form__name-input" placeholder="Ну и отчество тоже">
-                </div>                 
-            </div>
-
-            <fieldset class="main-form__achievements">
-                <legend class="main-form__achievements-legend">Ваши безбашенные достижения в путешествии</legend>
-                <div class="main-form__achievements-group">
-                    <input type="checkbox" id="chek-shark" name="chek-shark" class="main-form__achievements_checkbox" checked>
-                    <label for="chek-shark" class="main-form__achievements-label">Сделал селфи с акулой</label>
+    
+                <fieldset class="main-form__achievements">
+                    <legend class="main-form__achievements-legend">Ваши безбашенные достижения в путешествии</legend>
+                    <div class="main-form__achievements-flex-wraper">
+                        <div class="main-form__achievements-group">
+                            <input type="checkbox" id="chek-shark" name="chek-shark" class="main-form__achievements_checkbox" checked>
+                            <label for="chek-shark" class="main-form__achievements-label">Сделал селфи с акулой</label>
+                        </div>
+                        <div class="main-form__achievements-group">
+                            <input type="checkbox" id="chek-sun-burn" name="chek-sun-burn" class="main-form__achievements_checkbox" checked>
+                            <label for="chek-sun-burn" class="main-form__achievements-label">Обгорел на пляже</label>
+                        </div>
+                        <div class="main-form__achievements-group">
+                            <input type="checkbox" id="chek-chuck" name="chek-chuck" class="main-form__achievements_checkbox">
+                            <label for="chek-chuck" class="main-form__achievements-label">Видел Чака Норриса</label>
+                        </div>
+                        <div class="main-form__achievements-group">
+                            <input type="checkbox" id="chek-souvenirs" name="chek-souvenirs" class="main-form__achievements_checkbox">
+                            <label for="chek-souvenirs" class="main-form__achievements-label">Накупил сувениров</label>
+                        </div>
+                        <div class="main-form__achievements-group">
+                            <input type="checkbox" id="chek-tower" name="chek-tower" class="main-form__achievements_checkbox" checked>
+                            <label for="chek-tower" class="main-form__achievements-label">Удержал башню</label>
+                        </div>
+                        <div class="main-form__achievements-group">
+                            <input type="checkbox" id="chek-hotel" name="chek-hotel" class="main-form__achievements_checkbox">
+                            <label for="chek-hotel" class="main-form__achievements-label">Разгромил отель</label>
+                        </div>
+                    </div>
+                    
+                </fieldset>
+    
+                <fieldset class="main-form__contact-info">
+                    <legend class="main-form__contact-info-legend">Контактная информация</legend>   
+                    <div class="main-form__contact-flex-wrapper">
+                        <div class="main-form__contact-info-group main-form__contact-info-group--phone"> 
+                            <label for="phone-number" class="main-form__contact-label">Номер телефона</label>                  
+                            <input id="phone-number" type="tel" class="main-form__contact-input" placeholder="Номер, пожалуйста">                    
+                        </div>
+                        <div class="main-form__contact-info-group main-form__contact-info-group--mail">                    
+                            <label for="email" class="main-form__contact-label">Адрес почты</label>
+                            <input id="email" type="email" class="main-form__contact-input" placeholder="Введите почту *" required>                    
+                        </div>
+                    </div>             
+                    
+                </fieldset>
+    
+                <fieldset class="main-form__app-radio">
+                    <legend class="main-form__app-radio-legend">С каким приложением путешествовали?</legend>
+                    <div class="main-form__app-radio-group">
+                        <input class="main-form__app-radio-buton" type="radio" id="radio-ios" name="app-radio" value="ios" checked>
+                        <label class="main-form__app-radio-label" for="radio-ios">Pink для iOS</label>
+                    </div>
+                    <div class="main-form__app-radio-group">
+                        <input class="main-form__app-radio-buton" type="radio" id="radio-android" name="app-radio" value="android">
+                        <label class="main-form__app-radio-label" for="radio-android">Pink на Android</label>
+                    </div>
+                    <div class="main-form__app-radio-group">
+                        <input class="main-form__app-radio-buton" type="radio" id="radio-windows" name="app-radio" value="windows">
+                        <label class="main-form__app-radio-label" for="radio-windows">Windows Phone</label>
+                    </div>
+                </fieldset>
+                
+                <fieldset class="main-form__emotions">
+                    <legend class="main-form__emotions-legend">Опишите свои эмоции</legend>
+                    <textarea name="emotions-text" id="emotions-text" cols="30" rows="10" class="main-form__emotions-text">Можно прям в красках, не стесняясь в выражениях</textarea>
+                </fieldset>
+    
+                <div class="main-form__btn-required-wrapper">
+                    <button type="submit" class="main-form__btn">Отправить форму</button>
+                    <div class="main-form__required-info">
+                        <span class="main-form__required-info-star">*</span> — обязательные <span class="main-form__required-info-additional">для заполнения</span> поля
+                    </div>
                 </div>
-                <div class="main-form__achievements-group">
-                    <input type="checkbox" id="chek-sun-burn" name="chek-sun-burn" class="main-form__achievements_checkbox" checked>
-                    <label for="chek-sun-burn" class="main-form__achievements-label">Обгорел на пляже</label>
-                </div>
-                <div class="main-form__achievements-group">
-                    <input type="checkbox" id="chek-chuck" name="chek-chuck" class="main-form__achievements_checkbox">
-                    <label for="chek-chuck" class="main-form__achievements-label">Видел Чака Норриса</label>
-                </div>
-                <div class="main-form__achievements-group">
-                    <input type="checkbox" id="chek-souvenirs" name="chek-souvenirs" class="main-form__achievements_checkbox">
-                    <label for="chek-souvenirs" class="main-form__achievements-label">Накупил сувениров</label>
-                </div>
-                <div class="main-form__achievements-group">
-                    <input type="checkbox" id="chek-tower" name="chek-tower" class="main-form__achievements_checkbox" checked>
-                    <label for="chek-tower" class="main-form__achievements-label">Удержал башню</label>
-                </div>
-                <div class="main-form__achievements-group">
-                    <input type="checkbox" id="chek-hotel" name="chek-hotel" class="main-form__achievements_checkbox">
-                    <label for="chek-hotel" class="main-form__achievements-label">Разгромил отель</label>
-                </div>
-            </fieldset>
-
-            <fieldset class="main-form__contact-info">
-                <legend class="main-form__contact-info-legend">Контактная информация</legend>                
-                <div class="main-form__contact-info-group main-form__contact-info-group--phone"> 
-                    <label for="phone-number" class="main-form__contact-label">Номер телефона</label>                  
-                    <input id="phone-number" type="tel" class="main-form__contact-input" placeholder="Номер, пожалуйста">                    
-                </div>
-                <div class="main-form__contact-info-group main-form__contact-info-group--mail">                    
-                    <label for="email" class="main-form__contact-label">Адрес почты</label>
-                    <input id="email" type="email" class="main-form__contact-input" placeholder="Введите почту *" required>                    
-                </div>
-            </fieldset>
-
-            <fieldset class="main-form__app-radio">
-                <legend class="main-form__app-radio-legend">С каким приложением путешествовали?</legend>
-                <div class="main-form__app-radio-group">
-                    <input class="main-form__app-radio-buton" type="radio" id="radio-ios" name="app-radio" value="ios" checked>
-                    <label class="main-form__app-radio-label" for="radio-ios">Pink для iOS</label>
-                </div>
-                <div class="main-form__app-radio-group">
-                    <input class="main-form__app-radio-buton" type="radio" id="radio-android" name="app-radio" value="android">
-                    <label class="main-form__app-radio-label" for="radio-android">Pink на Android</label>
-                </div>
-                <div class="main-form__app-radio-group">
-                    <input class="main-form__app-radio-buton" type="radio" id="radio-windows" name="app-radio" value="windows">
-                    <label class="main-form__app-radio-label" for="radio-windows">Windows Phone</label>
-                </div>
-            </fieldset>
-            
-            <fieldset class="main-form__emotions">
-                <legend class="main-form__emotions-legend">Опишите свои эмоции</legend>
-                <textarea name="emotions-text" id="emotions-text" cols="30" rows="10" class="main-form__emotions-text">Можно прям в красках, не стесняясь в выражениях</textarea>
-            </fieldset>
-
-            <div class="main-form__btn-required-wrapper">
-                <button type="submit" class="main-form__btn">Отправить форму</button>
-                <div class="main-form__required-info">
-                    <span class="main-form__required-info-star">*</span> — обязательные<span class="main-form__required-info-additional">для заполнения</span> поля
-                </div>
-            </div>
-               
-        </form>
+                   
+            </form>
+        </div>
     </section>
 
     <footer class="footer footer--secondary-page"> 
-            <a class="footer__logo">
+        <div class="container">
+            <a href="/" class="footer__logo">
                 <picture>
                     <source media="(min-width:1200px)" srcset="img/logotype-black-desktop.svg">                    
                     <img class="logo__img" src="img/logotype-black-tablet.svg" alt="pink mobile logo">
@@ -166,15 +177,14 @@
                     </a>
                 </li> 
             </ul>
-
+    
             <div class="footer__designed-by">
                 <span class="footer__designed-by-text">Разработано</span>
                 <a href="#" class="footer__designed-by-link">
                     <svg xmlns="http://www.w3.org/2000/svg" height="34px" width="27px" viewBox="0 0 220 250" xml:space="preserve" id="svg2" version="1.1"><defs id="defs6"><clipPath id="clipPath22" clipPathUnits="userSpaceOnUse"><path id="path20" d="M0 195.325h154.384V0H0z"/></clipPath></defs><g transform="matrix(1.33333 0 0 -1.33333 0 260.433)" id="g10"><g transform="translate(143.852 124.97)" id="g12"><path id="path14" d="M0 0l-67.02 39.508v.01l-.008-.005-.008.005v-.01L-133.32.046v52.731l66.661 6.989L0 52.777zm-.054-6.992L-18.29-17.736l-8.419-4.96-40.149 23.884-.066-6.951 34.317-20.407-.304-.18-.739-.435-4.876-2.872-28.332 16.854-.066-6.951 22.362-13.298-5.276-3.529-.128-.077-16.892 9.951-.066-6.95 11.084-6.528-11.291-6.779-66.044 39.259 66.139 39.755v-.007zM0-73.051l-66.66-39.663-66.66 39.663v57.615l66.374-39.505.111-7.16-45.534 27.1-.067-6.951 45.715-27.475.113-7.349-45.7 27.185-.066-6.95 45.714-27.475L-20.508-56.4v6.982l-.057-.034v22.705L0-14.466zm-65.855 142.82l-.807.084-76.69-8.04V-78.755l76.692-45.633 76.692 45.633V61.813z" fill="#d22856" fill-opacity="1" fill-rule="nonzero" stroke="none"/></g><g id="g16"><g clip-path="url(#clipPath22)" id="g18"><g transform="translate(143.852 124.97)" id="g24"><path id="path26" d="M0 0l-67.02 39.508v.01l-.008-.005-.008.005v-.01L-133.32.046v52.731l66.661 6.989L0 52.777zm-.054-6.992L-18.29-17.736l-8.419-4.96-40.149 23.884-.066-6.951 34.317-20.407-.304-.18-.739-.435-4.876-2.872-28.332 16.854-.066-6.951 22.362-13.298-5.276-3.529-.128-.077-16.892 9.951-.066-6.95 11.084-6.528-11.291-6.779-66.044 39.259 66.139 39.755v-.007zM0-73.051l-66.66-39.663-66.66 39.663v57.615l66.374-39.505.111-7.16-45.534 27.1-.067-6.951 45.715-27.475.113-7.349-45.7 27.185-.066-6.95 45.714-27.475L-20.508-56.4v6.982l-.057-.034v22.705L0-14.466zm-65.855 142.82l-.807.084-76.69-8.04V-78.755l76.692-45.633 76.692 45.633V61.813z" fill="none" stroke="#231f20" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="none" stroke-opacity="1"/></g></g></g></g></svg>
                 </a>
-            </div>       
-    </footer>
-
-    
+            </div>
+        </div>       
+    </footer>    
 </body>
 </html>

@@ -1,4 +1,4 @@
-.form-info {
+.form-info .container {
     padding: 54px 23px 10px 23px;
 }
 
@@ -16,7 +16,7 @@
 }
 
 @include media-tablet {
-    .form-info {
+    .form-info .container {
         padding: 100px 85px 10px 85px;
     }
 
@@ -30,7 +30,7 @@
 }
 
 @include media-laptop {
-    .form-info {
+    .form-info .container {
         padding: 100px 220px 10px 220px;
     }
 }

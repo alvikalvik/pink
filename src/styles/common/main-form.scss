@@ -1,4 +1,4 @@
-.main-form {
+.main-form .container {
     margin-top: 49px;
 }
 
@@ -281,7 +281,7 @@
 }
 
 @include media-tablet {
-    .main-form {
+    .main-form .container {
         margin-top: 70px;
         padding: 0 20px;
 
@@ -377,18 +377,21 @@
             background-image: url(../img/phone.svg);
             background-position: center center;
             background-repeat: no-repeat;
+            background-size: 20px 19px;
         }
         &--mail::after {
             content: "";
             background-image: url(../img/mail.svg);
             background-position: center center;
             background-repeat: no-repeat;
+            background-size: 18px 13px;
         }
     }
     
     .main-form__contact-label {
        order: 2;
        margin-top: 20px;
+       padding-left: 15px;
     }  
 
     .main-form__app-radio {
@@ -437,6 +440,70 @@
     
     .main-form__required-info {
         margin-top: 0;
+    } 
+}
+
+@include media-laptop {
+    .main-form .container {
+        margin-top: 80px;
+        padding: 0 130px;
+
+    }
+
+    .main-form__form {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;        
+    }
+
+    .main-form__name-info {        
+        width: 49%;
+        margin-top: 20px;
+        order: 1;        
+        padding-right: 35px;        
     }    
+
+    .main-form__achievements {             
+        padding-top: 10px;        
+    }
+
+    .main-form__achievements-flex-wraper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;       
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .main-form__achievements-group {
+        width: 33%;   
+        margin-top: 45px;
+        &:first-of-type {
+            margin-top: 45px;
+        }                
+    }   
+
+    .main-form__contact-flex-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .main-form__contact-info-group {
+        margin-top: 0;
+        width: 45%;
+    } 
+
+    .main-form__app-radio {
+        width: 49%;
+        margin-top: 0;
+    }
+
+    .main-form__required-info-additional {
+        display: inline;
+    }
+
 
 }

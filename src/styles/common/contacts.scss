@@ -113,7 +113,7 @@
     
     .contacts__map {
         height: 42vw;
-        min-height: 505px;
+        max-height: 505px;
         margin-top: 30px;    
         background-image: url(../img/map.png); 
         @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -121,7 +121,9 @@
         }    
         &::before {       
             border-top: 100px solid #ffffff;
-            border-bottom: 100px solid transparent;        
+            border-bottom: 100px solid transparent;    
+            border-right: 600px solid transparent;
+            border-left: 600px solid transparent;    
         }
     }   
 }

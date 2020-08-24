@@ -1,4 +1,4 @@
-.comments {
+.comments .container {
     position: relative;
     padding: 45px 20px 0 20px;
 }
@@ -91,7 +91,7 @@
 }
 
 @include media-tablet {
-    .comments {
+    .comments .container {
         padding: 100px 20px 0 20px;
     }
 
@@ -129,7 +129,7 @@
 }
 
 @include media-laptop {
-    .comments {
+    .comments .container {
         padding: 75px 255px 0 255px;
     }
 
