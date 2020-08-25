@@ -1,9 +1,17 @@
+@keyframes menuin {
+    from {transform: translateY(-150%);}
+    to {transform: translateY(0);}
+}
+
 .menu {
     @include reset-list;
     display: none;  
     &--nojs, &--active {
         display: block;
     }
+    transition: 0.3s all;
+    animation-name: menuin;
+    animation-duration: 0.2s;
 }
 
 .menu__item {
